@@ -148,10 +148,11 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    /* height: 96vh; */
+    min-height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
+    /* min-height: fit-content; */
 }
 
 .section-container {
@@ -355,11 +356,21 @@ article .icon {
 
 #projects {
     position: relative;
+    /* padding-bottom: 5vh; */
+    min-height: 80vh;
 }
 
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+}
+
+.project-related-containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax width as needed */
+    gap: 2rem; /* Adjust the gap between containers */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .project-img {
@@ -373,6 +384,11 @@ article .icon {
     color: black;
 }
 
+.project-objective {
+    margin: 1rem;
+    color: grey;
+}
+
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
@@ -384,7 +400,7 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
 }
 
 .contact-info-upper-container {
